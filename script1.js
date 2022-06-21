@@ -7,17 +7,24 @@ const options = {
     colors: {
         border: 'black',
         bg: 'red'
+    },
+    makeTest: function() {
+        console.log("Test");
     }
 };
-//console.log(Object.keys(options).length);
 
+options.makeTest();
+// console.log(Object.keys(options).length);
+const {border, bg} = options.colors;
+console.log(border);
+/*
 //console.log(options["colors"]["border"]);
 //delete options.name;
 //console.log(options);
 //---
 
 let counter = 0;
-/*
+
 for (let key in options) {
     if (typeof(options[key]) === 'object'){
         for (let i in options[key]){
@@ -29,10 +36,10 @@ for (let key in options) {
         counter++;
     }    
 }
-console.log(counter);*/
+console.log(counter);
 
 for (let key in options){
     counter++;
     console.log(key);
 }
-console.log(counter);
+console.log(counter);*/
