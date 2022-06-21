@@ -9,10 +9,30 @@ const options = {
         bg: 'red'
     }
 };
-//console.log(options.name);
+//console.log(Object.keys(options).length);
+
+//console.log(options["colors"]["border"]);
 //delete options.name;
 //console.log(options);
+//---
 
+let counter = 0;
+/*
 for (let key in options) {
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    if (typeof(options[key]) === 'object'){
+        for (let i in options[key]){
+            console.log(`Свойство ${key} имеет значение ${options[key][i]}`);
+            counter++;
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        counter++;
+    }    
 }
+console.log(counter);*/
+
+for (let key in options){
+    counter++;
+    console.log(key);
+}
+console.log(counter);
