@@ -32,3 +32,7 @@ function availableCurr(arr, missingCurr) {
     return str;
 }
 console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY'));
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arr.reverse().join(''));
+console.log(arr.reverse());
