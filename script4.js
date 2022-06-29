@@ -50,7 +50,7 @@ function whoIAm(plan){
     const {programminLangs} = plan.skills;
 
     for(let key in programminLangs){
-        str += `${key} на ${programminLangs[key]}, `
+        str += `${key} на ${programminLangs[key]}, `;
     }
     return sstr + str;
 }
